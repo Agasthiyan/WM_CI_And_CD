@@ -53,6 +53,14 @@
         	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="Simulate" inheritAll="true"/>
 	</target>
 	
+	<target name="DeployCP" depends="">
+        	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="DeployCP" inheritAll="true"/>
+	</target>
+	
+	<target name="Deploy" depends="">
+        	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="Deploy" inheritAll="true"/>
+	</target>
+	
 	<!--
         <target name="deploy" depends="">
         	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="deploy" inheritAll="true"/>
