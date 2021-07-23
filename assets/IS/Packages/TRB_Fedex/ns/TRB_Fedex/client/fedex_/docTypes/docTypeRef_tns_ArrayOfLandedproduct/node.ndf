@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="record" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="node_nsName">TRB_Fedex.client.fedex_.docTypes:docTypeRef_tns_ArrayOfLandedproduct</value>
+    <value name="node_pkg">TRB_Fedex</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <value name="schemaDomain">f4b416336b555e5b177b1ec6bc7</value>
+    <value name="docTypeDomain">0e78e050a65f15f0aab6fffffffc3f1b</value>
+    <value name="originURI">file://E:\[B]Official\Fedex\WS\fedex.xml</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">item</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">1</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">false</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">TRB_Fedex.client.fedex_.docTypes:docTypeRef_tns_LandedProduct</value>
+      </record>
+    </array>
+    <record name="schemaType" javaclass="com.wm.util.Values">
+      <value name="xmlns">https://api.crossborder.fedex.com/services/v4.5</value>
+      <value name="ncName">ArrayOfLandedproduct</value>
+    </record>
+    <value name="schemaRegistered">true</value>
+    <value name="modifiable">false</value>
+  </record>
+</Values>

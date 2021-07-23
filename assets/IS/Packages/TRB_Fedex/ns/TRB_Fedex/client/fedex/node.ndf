@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">webServiceDescriptor</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">TRB_Fedex.client:fedex</value>
+  <value name="node_pkg">TRB_Fedex</value>
+  <value name="is_public">false</value>
+  <Boolean name="inbound">false</Boolean>
+  <Boolean name="WSICompliant">false</Boolean>
+  <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+  <value name="targetNamespace">https://api.crossborder.fedex.com/services/v4.5</value>
+  <Boolean name="attachmentEnabled">false</Boolean>
+  <number name="mtomThreshold" type="Integer">0</number>
+  <array name="externalWSDLSources" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="contextURI">http://localhost:9120/</value>
+      <value name="locationURI">TRB_Fedex.client.fedex?wsdl=wsdl0</value>
+      <null name="source"/>
+      <number name="type" type="Integer">1</number>
+    </record>
+  </array>
+  <value name="externalWSDLURL">file:/E:/[B]Official/Fedex/WS/fedex.xml</value>
+  <value name="WSDLURL">http://DESKTOP-T1T3I84:9120/ws/TRB_Fedex.client:fedex?WSDL</value>
+  <value name="definitionName">BongoServiceV45</value>
+  <value name="version">_9_12</value>
+  <value name="schemaDomain">f4b416336b555e5b177b1ec6bc7</value>
+  <Boolean name="rawArray">true</Boolean>
+  <array name="handlerList" type="record" depth="1">
+  </array>
+  <array name="binderList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="binderName">BongoServiceV45Binding</value>
+      <value name="portAddress">https://api.crossborder.fedex.com/services/v4.5</value>
+      <value name="bindingName">BongoServiceV45Binding</value>
+      <value name="bindingStyle">document</value>
+      <value name="bindingUse">literal</value>
+      <value name="bindingType">SOAP</value>
+      <value name="portName">BongoServiceV45Port</value>
+      <value name="portTypeName">BongoServiceV45Port</value>
+      <value name="bindingTransport">http://schemas.xmlsoap.org/soap/http</value>
+      <value name="transportType">https</value>
+      <record name="operationMap" javaclass="com.wm.util.Values">
+        <value name="ConnectProductInfo">ConnectProductInfo</value>
+        <value name="createLandedCostTransactionId">createLandedCostTransactionId</value>
+        <value name="ConnectDuty">ConnectDuty</value>
+        <value name="ConnectSkuStatus">ConnectSkuStatus</value>
+        <value name="ConnectLandedCost">ConnectLandedCost</value>
+        <value name="isPrivateCall">isPrivateCall</value>
+        <value name="ConnectOrder">ConnectOrder</value>
+        <value name="ConnectOrderTrackingUpdate">ConnectOrderTrackingUpdate</value>
+        <value name="ConnectOrderRemove">ConnectOrderRemove</value>
+      </record>
+      <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+      <value name="SOAPDirective">ws</value>
+      <Boolean name="useCSQ">false</Boolean>
+    </record>
+  </array>
+  <array name="operationList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">ConnectDuty</value>
+      <value name="serviceName">TRB_Fedex.client.fedex_.connectors:BongoServiceV45Port_ConnectDuty</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectDuty_Input</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectDuty_Input</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectDuty_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectDuty_Output</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectDuty_Output</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectDuty_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">ConnectProductInfo</value>
+      <value name="serviceName">TRB_Fedex.client.fedex_.connectors:BongoServiceV45Port_ConnectProductInfo</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectProductInfo_Input</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectProductInfo_Input</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectProductInfo_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectProductInfo_Output</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectProductInfo_Output</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectProductInfo_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">ConnectLandedCost</value>
+      <value name="serviceName">TRB_Fedex.client.fedex_.connectors:BongoServiceV45Port_ConnectLandedCost</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectLandedCost_Input</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectLandedCost_Input</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectLandedCost_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectLandedCost_Output</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectLandedCost_Output</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectLandedCost_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">ConnectSkuStatus</value>
+      <value name="serviceName">TRB_Fedex.client.fedex_.connectors:BongoServiceV45Port_ConnectSkuStatus</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectSkuStatus_Input</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectSkuStatus_Input</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectSkuStatus_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectSkuStatus_Output</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectSkuStatus_Output</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectSkuStatus_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">ConnectOrder</value>
+      <value name="serviceName">TRB_Fedex.client.fedex_.connectors:BongoServiceV45Port_ConnectOrder</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectOrder_Input</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectOrder_Input</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectOrder_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectOrder_Output</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectOrder_Output</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectOrder_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">ConnectOrderTrackingUpdate</value>
+      <value name="serviceName">TRB_Fedex.client.fedex_.connectors:BongoServiceV45Port_ConnectOrderTrackingUpdate</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectOrderTrackingUpdate_Input</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectOrderTrackingUpdate_Input</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectOrderTrackingUpdate_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectOrderTrackingUpdate_Output</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectOrderTrackingUpdate_Output</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectOrderTrackingUpdate_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">ConnectOrderRemove</value>
+      <value name="serviceName">TRB_Fedex.client.fedex_.connectors:BongoServiceV45Port_ConnectOrderRemove</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectOrderRemove_Input</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectOrderRemove_Input</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectOrderRemove_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_ConnectOrderRemove_Output</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectOrderRemove_Output</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_ConnectOrderRemove_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">createLandedCostTransactionId</value>
+      <value name="serviceName">TRB_Fedex.client.fedex_.connectors:BongoServiceV45Port_createLandedCostTransactionId</value>
+      <value name="originalMEPType">MEP_URI_IN_ONLY</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_createLandedCostTransactionId_Input</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_createLandedCostTransactionId_Input</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_createLandedCostTransactionId_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">:</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">isPrivateCall</value>
+      <value name="serviceName">TRB_Fedex.client.fedex_.connectors:BongoServiceV45Port_isPrivateCall</value>
+      <value name="originalMEPType">MEP_URI_IN_ONLY</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://api.crossborder.fedex.com/services/v4.5:BongoServiceV45Port_isPrivateCall_Input</value>
+          <value name="docType">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_isPrivateCall_Input</value>
+          <value name="nsOwner">TRB_Fedex.client.fedex_.docTypes:BongoServiceV45Port_isPrivateCall_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">:</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+  </array>
+  <record name="namespaces" javaclass="com.wm.util.Values">
+    <value name="">http://schemas.xmlsoap.org/wsdl/</value>
+    <value name="wsdl">http://schemas.xmlsoap.org/wsdl/</value>
+    <value name="tns">https://api.crossborder.fedex.com/services/v4.5</value>
+    <value name="xsd">http://www.w3.org/2001/XMLSchema</value>
+    <value name="soap-enc">http://schemas.xmlsoap.org/soap/encoding/</value>
+    <value name="soap">http://schemas.xmlsoap.org/wsdl/soap/</value>
+  </record>
+  <Boolean name="HeadersInPipelineEnabled">false</Boolean>
+  <Boolean name="validateSOAPResponse">true</Boolean>
+  <Boolean name="validateSchemaUsingXerces">true</Boolean>
+  <Boolean name="enableCompatibility">false</Boolean>
+  <Boolean name="omitXSDAny">true</Boolean>
+  <record name="userDefinedURIReferencePrefixes" javaclass="com.wm.util.Values">
+  </record>
+  <Boolean name="registerDoctypes">true</Boolean>
+  <Boolean name="allTypes">false</Boolean>
+  <Boolean name="generateXOPObjectForBase64Binary">false</Boolean>
+  <value name="originURI">file://E:\[B]Official\Fedex\WS\fedex.xml</value>
+  <value name="modifiable">false</value>
+  <value name="externalServiceName">{https://api.crossborder.fedex.com/services/v4.5}BongoServiceV45Service</value>
+  <null name="policyAttachmentList"/>
+  <Boolean name="filterLoginCredentials">false</Boolean>
+</Values>
