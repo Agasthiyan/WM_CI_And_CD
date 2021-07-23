@@ -61,6 +61,10 @@
         	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="Deploy" inheritAll="true"/>
 	</target>
 	
+	<target name="Rollback" depends="">
+        	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="Rollback" inheritAll="true"/>
+	</target>
+	
 	<!--
         <target name="deploy" depends="">
         	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="deploy" inheritAll="true"/>
