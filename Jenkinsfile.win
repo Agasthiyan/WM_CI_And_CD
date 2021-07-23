@@ -18,10 +18,12 @@
 *
 */
 
+    def testFailureFlag = false
+
 pipeline {
     agent any 
 
-    def testFailureFlag = false
+
 
     stages {
         stage('Build'){
